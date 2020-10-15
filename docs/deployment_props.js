@@ -81,7 +81,7 @@ export default {
     'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
             __html: '<nav class="toc"><ol><li><a href="#github-pages">GitHub Pages</a></li><li><a href="#cloudbase">CloudBase</a></li></ol></nav>'
         } }),
-    'date': "2020-10-13T04:07:10.035Z",
+    'date': "2020-10-15T08:42:21.600Z",
     'updated': null,
     'author': undefined,
     'contributors': [],

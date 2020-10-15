@@ -19,7 +19,7 @@ export default {
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/index.js", type: "module" })),
     'toc': null,
-    'date': "2020-10-13T04:07:10.035Z",
+    'date': "2020-10-15T08:42:21.600Z",
     'updated': null,
     'author': undefined,
     'contributors': [],
