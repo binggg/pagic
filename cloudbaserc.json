@@ -21,7 +21,11 @@
   "hooks": {
     "preDeploy": {
       "type": "execCommand",
-      "commands": ["curl -fsSL https://x.deno.js.cn/install.sh | sh;export DENO_INSTALL=~/.deno;export PATH=$DENO_INSTALL/bin:$PATH;"]
+      "commands": [
+        "curl -fsSL https://x.deno.js.cn/install.sh | sh;export DENO_INSTALL=~/.deno;export PATH=$DENO_INSTALL/bin:$PATH;",
+        "echo $PATH",
+        "deno -v"
+      ]
     }
   }
 }
