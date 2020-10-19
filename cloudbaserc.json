@@ -11,12 +11,17 @@
         "use": "@cloudbase/framework-plugin-website",
         "inputs": {
           "commands": {
-            "install": "curl -fsSL https://x.deno.js.cn/install.sh | sh;export DENO_INSTALL=~/.deno;export PATH=$DENO_INSTALL/bin:$PATH;",
             "build": "cd pagic.cn && deno run --unstable --allow-read --allow-write build.ts && deno run --unstable --allow-read --allow-write --allow-net --allow-run https://deno.land/x/pagic@v0.10.0/mod.ts build"
           },
           "outputPath": "pagic.cn/dist"
         }
       }
+    }
+  },
+  "hooks": {
+    "preDeploy": {
+      "type": "execCommand",
+      "commands": ["curl -fsSL https://x.deno.js.cn/install.sh | sh;export DENO_INSTALL=~/.deno;export PATH=$DENO_INSTALL/bin:$PATH;"]
     }
   }
 }
