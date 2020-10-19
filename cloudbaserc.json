@@ -12,7 +12,7 @@
         "inputs": {
           "commands": {
             "install": "type deno;if [ $? -eq 1 ];then curl -fsSL https://x.deno.js.cn/install.sh | sh;fi",
-            "build": "cd pagic.cn && deno run --unstable --allow-read --allow-write build.ts && deno run --unstable --allow-read --allow-write --allow-net --allow-run https://deno.land/x/pagic@v0.10.0/mod.ts build"
+            "build": "cd pagic.cn && ~/.deno/bin/deno run --unstable --allow-read --allow-write build.ts && deno run --unstable --allow-read --allow-write --allow-net --allow-run https://deno.land/x/pagic@v0.10.0/mod.ts build"
           },
           "outputPath": "pagic.cn/dist"
         }
